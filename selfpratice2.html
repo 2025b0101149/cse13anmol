@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Student Result</title>
+    </head>
+    <body>
+        <h2>student result Program</h2>
+        <script>
+            var subjects = prompt("enter number of subjects");
+            var total =0;
+            for(var i=1;i<=subjects;i++){
+                var marks = prompt("enter marks of subjects" +i);
+                total=total + Number(marks);
+            }
+            var average=total/subjects;
+            var grade;
+            var result;
+            if(average>=60){
+                grade="A";
+                result="pass";
+            }
+            else if(average>=50){
+                grade="B";
+                result="pass";
+            }
+            else if(average>=40){
+                grade="c";
+                result="pass";
+            }
+            else{
+                grade="D";
+                result="fail";
+            }
+            document.write("total marks="+total);
+            document.write("<br>");
+            document.write("average marks="+average);
+            document.write("<br>");
+            document.write("grade="+grade);
+            document.write("<br>");
+            document.write("Result="+result);
+        </script>
+    </body>
+</html>
