@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reverse Number</title>
+</head>
+
+<body>
+
+<script>
+
+let num=1234;
+
+let reverse=0;
+
+while(num>0)
+{
+    reverse=reverse*10+(num%10);
+
+    num=Math.floor(num/10);
+}
+
+console.log(reverse);
+
+</script>
+
+</body>
+</html>
