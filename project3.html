@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Writing Website</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+
+    <!-- Taskbar -->
+    <nav>
+        <h2>My Blog</h2>
+
+        <ul>
+            <li><a href="#" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" onclick="showTab('blogs')">Blogs</a></li>
+            <li><a href="#" onclick="showTab('write')">Write Blog</a></li>
+            <li><a href="#" onclick="showTab('about')">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Tab -->
+    <div id="home" class="tab">
+        <h1>Welcome to Blog Website</h1>
+        <p>Create and share your blogs easily.</p>
+    </div>
+
+    <!-- Blogs Tab -->
+    <div id="blogs" class="tab" style="display:none;">
+        <h1>Published Blogs</h1>
+
+        <div id="blogList"></div>
+    </div>
+
+    <!-- Write Blog Tab -->
+    <div id="write" class="tab" style="display:none;">
+        <h1>Write New Blog</h1>
+
+        <input type="text" id="title" placeholder="Blog Title">
+
+        <textarea id="content" placeholder="Write your blog here"></textarea>
+
+        <button onclick="addBlog()">Publish Blog</button>
+    </div>
+
+    <!-- About Tab -->
+    <div id="about" class="tab" style="display:none;">
+        <h1>About</h1>
+        <p>This project is made using HTML, CSS and JavaScript.</p>
+    </div>
+
+    <script src="project3.js"></script>
+
+</body>
+</html>
